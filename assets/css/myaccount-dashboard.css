@@ -64,6 +64,19 @@ body.smartnet-myaccount-page .woocommerce-account .col-lg-3 {
   display: none !important;
 }
 
+/* === THEME KE HEADER HAMBURGER HIDE KARO (sirf dashboard hamburger rahe) === */
+body.smartnet-myaccount-page .site-header .hamburger-menu,
+body.smartnet-myaccount-page .site-header .mobile-menu-toggle,
+body.smartnet-myaccount-page .site-header [class*="hamburger"],
+body.smartnet-myaccount-page .site-header [class*="mobile-toggle"],
+body.smartnet-myaccount-page header [class*="toggle"],
+body.smartnet-myaccount-page .feron-header-menu-toggle,
+body.smartnet-myaccount-page .thim-header-toggle,
+body.smartnet-myaccount-page .menu-toggle,
+body.smartnet-myaccount-page .wp-block-navigation__responsive-container-open {
+  display: none !important;
+}
+
 /* Breadcrumb bhi hatao */
 body.smartnet-myaccount-page .page-header,
 body.smartnet-myaccount-page .breadcrumb-area,
@@ -651,7 +664,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   position: fixed;
   top: 14px;
   left: 14px;
-  z-index: 9999;
+  z-index: 10001;
   width: 44px;
   height: 44px;
   border-radius: 12px;
@@ -664,6 +677,13 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   gap: 5px;
   box-shadow: 0 8px 20px rgba(83, 59, 241, 0.45);
   padding: 0;
+}
+
+/* Desktop pe hamburger chhupa raho (1024px+ pe sidebar visible ho) */
+@media (min-width: 1025px) {
+  .smartnet-mobile-toggle {
+    display: none !important;
+  }
 }
 
 .smartnet-mobile-toggle span {
