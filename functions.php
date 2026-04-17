@@ -182,7 +182,7 @@ function smartnet_hide_default_wc_account_css() {
             padding-right: 0 !important;
         }
 
-        /* === AGGRESSIVE COLOR OVERRIDE — ALL PURPLES === */
+        /* === DARK THEME COLOR OVERRIDE — ALL PURPLES TO DARK BLACK === */
         body.smartnet-myaccount-page *[style*="7457ff"],
         body.smartnet-myaccount-page *[style*="553be8"],
         body.smartnet-myaccount-page *[style*="purple"],
@@ -190,11 +190,12 @@ function smartnet_hide_default_wc_account_css() {
         body.smartnet-myaccount-page *[style*="#6c5ac4"],
         body.smartnet-myaccount-page [style*="rgb(116, 87, 255)"],
         body.smartnet-myaccount-page [style*="rgb(83, 59, 241)"] {
-            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            background: #1a1a2e !important;
             color: #fff !important;
+            border: 1px solid #2d2d44 !important;
         }
 
-        /* === FORCE STAT CARDS TO RED — TARGET ALL CARD TYPES === */
+        /* === FORCE STAT CARDS TO DARK — TARGET ALL CARD TYPES === */
         body.smartnet-myaccount-page .smartnet-stat-card,
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > div[style*="background"],
         body.smartnet-myaccount-page [class*="stat"],
@@ -202,8 +203,9 @@ function smartnet_hide_default_wc_account_css() {
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > div > div,
         body.smartnet-myaccount-page ul li div,
         body.smartnet-myaccount-page li > div[style] {
-            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            background: #1a1a2e !important;
             color: #fff !important;
+            border: 1px solid #2d2d44 !important;
         }
 
         /* === OVERRIDE ALL INLINE PURPLE STYLES === */
@@ -213,14 +215,15 @@ function smartnet_hide_default_wc_account_css() {
         body.smartnet-myaccount-page [style*="rgb(83, 59, 241)"],
         body.smartnet-myaccount-page [style*="7457ff"],
         body.smartnet-myaccount-page [style*="553be8"] {
-            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            background: #1a1a2e !important;
+            border: 1px solid #2d2d44 !important;
         }
 
         /* === UNIVERSAL STAT CARD OVERRIDE — ALL BACKGROUNDS === */
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > * {
-            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            background: #1a1a2e !important;
             color: #fff !important;
-            border: 0 !important;
+            border: 1px solid #2d2d44 !important;
         }
 
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > * > * {
@@ -244,7 +247,7 @@ function smartnet_hide_default_wc_account_css() {
             border-radius: 0 !important;
         }
 
-        /* === STAT CARDS/BOXES AGGRESSIVE RED OVERRIDE === */
+        /* === STAT CARDS/BOXES DARK OVERRIDE === */
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > ul,
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > div {
             display: grid;
@@ -255,11 +258,11 @@ function smartnet_hide_default_wc_account_css() {
 
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > ul > li,
         body.smartnet-myaccount-page .woocommerce-MyAccount-content > div > div {
-            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            background: #1a1a2e !important;
             color: #fff !important;
             padding: 20px !important;
             border-radius: 12px !important;
-            border: none !important;
+            border: 1px solid #2d2d44 !important;
         }
 
         /* Feron theme ka position/width reset — sidebar grid mein sahi rahe */
@@ -274,7 +277,8 @@ function smartnet_hide_default_wc_account_css() {
             float: none !important;
             transform: none !important;
             z-index: auto !important;
-            background: rgba(16, 13, 52, 0.9) !important;
+            background: #0f0f1a !important;
+            border-right: 1px solid #2d2d44 !important;
         }
         .smartnet-account-layout { align-items: stretch !important; }
         .smartnet-account-layout .smartnet-account-main.woocommerce-MyAccount-content {
@@ -524,15 +528,23 @@ function smartnet_hide_default_wc_account_css() {
           min-height: 50px !important;
           margin: 0 !important;
           padding: 15px 18px !important;
-          border: 0 !important;
+          border: 1px solid #2d2d44 !important;
           border-radius: 14px !important;
-          background: linear-gradient(135deg, #CCFF00, #00D9FF) !important;
-          color: #090818 !important;
+          background: #2a2a3e !important;
+          color: #CCFF00 !important;
           font-size: 14px !important;
           font-weight: 950 !important;
           line-height: 1 !important;
           text-align: center !important;
-          box-shadow: 0 16px 34px rgba(82, 85, 255, 0.25) !important;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+          transition: all 0.3s ease !important;
+        }
+
+        body.smartnet-myaccount-page .smartnet-auth-submit:hover,
+        body.smartnet-myaccount-page .woocommerce .smartnet-auth-submit.button:hover,
+        body.smartnet-myaccount-page .smartnet-auth-form button.smartnet-auth-submit:hover {
+          background: #3a3a4e !important;
+          box-shadow: 0 6px 16px rgba(204, 255, 0, 0.2) !important;
         }
 
         @media (max-width: 820px) {
@@ -564,8 +576,9 @@ function smartnet_hide_default_wc_account_css() {
             height: 44px !important;
             border: 0 !important;
             border-radius: 12px !important;
-            background: linear-gradient(135deg, #E63946, #C1121F) !important;
-            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.45) !important;
+            background: #1a1a2e !important;
+            border: 2px solid #2d2d44 !important;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6) !important;
             cursor: pointer !important;
             padding: 0 !important;
             align-items: center !important;
@@ -599,7 +612,7 @@ function smartnet_hide_default_wc_account_css() {
             display: none !important;
             position: fixed !important;
             inset: 0 !important;
-            background: rgba(0, 0, 0, 0.62) !important;
+            background: rgba(0, 0, 0, 0.85) !important;
             z-index: 9998 !important;
             backdrop-filter: blur(4px) !important;
         }
@@ -645,10 +658,10 @@ function smartnet_hide_default_wc_account_css() {
                 overflow-y: auto !important;
                 transform: none !important;
                 transition: left 0.3s ease !important;
-                border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+                border-right: 1px solid #2d2d44 !important;
                 border-bottom: 0 !important;
-                box-shadow: 4px 0 30px rgba(0, 0, 0, 0.5) !important;
-                background: rgba(16, 13, 52, 0.98) !important;
+                box-shadow: 4px 0 30px rgba(0, 0, 0, 0.8) !important;
+                background: #0f0f1a !important;
             }
 
             body.smartnet-myaccount-page .smartnet-account-layout aside.smartnet-sidebar.woocommerce-MyAccount-navigation.is-open,
