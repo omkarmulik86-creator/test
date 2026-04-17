@@ -20,10 +20,10 @@ do_action( 'woocommerce_before_account_navigation' );
 ?>
 
 <aside class="smartnet-sidebar woocommerce-MyAccount-navigation" aria-label="<?php echo esc_attr__( 'Account pages', 'woocommerce' ); ?>">
-    <div class="smartnet-brand">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="smartnet-brand" title="<?php echo esc_attr__( 'Go to home', 'woocommerce' ); ?>">
         <span class="smartnet-brand-mark">S</span>
         <span class="smartnet-brand-name"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></span>
-    </div>
+    </a>
 
     <div class="smartnet-sidebar-search">
         <input type="search" placeholder="<?php echo esc_attr__( 'Search...', 'woocommerce' ); ?>" aria-label="<?php echo esc_attr__( 'Search account menu', 'woocommerce' ); ?>">
