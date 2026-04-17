@@ -139,6 +139,18 @@ function smartnet_hide_default_wc_account_css() {
     }
     ?>
     <style id="smartnet-wc-override">
+        /* === DASHBOARD HEADER — ADD TITLE AT TOP === */
+        body.smartnet-myaccount-page .smartnet-account-layout::before {
+            content: 'Dashboard';
+            display: block;
+            padding: 30px 40px 20px;
+            font-size: 32px;
+            font-weight: 900;
+            color: #fff;
+            background: #07051a;
+            margin-bottom: 20px;
+        }
+
         /* === AGGRESSIVE HEADER HIDE === */
         body.smartnet-myaccount-page .site-header,
         body.smartnet-myaccount-page header,
@@ -182,12 +194,72 @@ function smartnet_hide_default_wc_account_css() {
             color: #fff !important;
         }
 
+        /* === FORCE STAT CARDS TO RED — TARGET ALL CARD TYPES === */
+        body.smartnet-myaccount-page .smartnet-stat-card,
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > div[style*="background"],
+        body.smartnet-myaccount-page [class*="stat"],
+        body.smartnet-myaccount-page [class*="card"],
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > div > div,
+        body.smartnet-myaccount-page ul li div,
+        body.smartnet-myaccount-page li > div[style] {
+            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            color: #fff !important;
+        }
+
+        /* === OVERRIDE ALL INLINE PURPLE STYLES === */
+        body.smartnet-myaccount-page [style*="#7457ff"],
+        body.smartnet-myaccount-page [style*="#553be8"],
+        body.smartnet-myaccount-page [style*="rgb(116, 87, 255)"],
+        body.smartnet-myaccount-page [style*="rgb(83, 59, 241)"],
+        body.smartnet-myaccount-page [style*="7457ff"],
+        body.smartnet-myaccount-page [style*="553be8"] {
+            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+        }
+
+        /* === UNIVERSAL STAT CARD OVERRIDE — ALL BACKGROUNDS === */
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > * {
+            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            color: #fff !important;
+            border: 0 !important;
+        }
+
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > * > * {
+            color: #fff !important;
+        }
+
+        /* === TEXT CONTENT COLORS === */
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > * h3,
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > * h4,
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > * span,
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > * p {
+            color: #fff !important;
+            font-weight: 600 !important;
+        }
+
         body.smartnet-myaccount-page .smartnet-account-layout {
             width: 100vw !important;
             max-width: 100vw !important;
             margin-left: calc(50% - 50vw) !important;
             margin-right: calc(50% - 50vw) !important;
             border-radius: 0 !important;
+        }
+
+        /* === STAT CARDS/BOXES AGGRESSIVE RED OVERRIDE === */
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > ul,
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > ul > li,
+        body.smartnet-myaccount-page .woocommerce-MyAccount-content > div > div {
+            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            color: #fff !important;
+            padding: 20px !important;
+            border-radius: 12px !important;
+            border: none !important;
         }
 
         /* Feron theme ka position/width reset — sidebar grid mein sahi rahe */
