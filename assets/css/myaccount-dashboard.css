@@ -1,0 +1,1269 @@
+/* SMARTNET CUSTOM DASHBOARD - FULL WIDTH VERSION 
+   Theme: Hacklayer / WooCommerce Custom
+*/
+
+/* --- CRITICAL: THEME WRAPPER BREAKOUT --- 
+   Ye code theme ke un containers ko force stretch karega jo dashboard ko daba rahe hain.
+*/
+body.smartnet-myaccount-page .site-main, 
+body.smartnet-myaccount-page .container, 
+body.smartnet-myaccount-page .content-area,
+body.smartnet-myaccount-page #primary,
+body.smartnet-myaccount-page .entry-content,
+body.smartnet-myaccount-page .woocommerce {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important;
+    background: transparent !important;
+}
+
+body.smartnet-myaccount-page {
+  background: #07051a;
+}
+
+/* === SIDE SPACES HATAO — FULL WIDTH DASHBOARD === */
+
+/* Feron theme ka padding-120 aur content wrapper ka padding hatao */
+body.smartnet-myaccount-page .padding-120,
+body.smartnet-myaccount-page [class*="padding-120"],
+body.smartnet-myaccount-page .feron-page-content-area,
+body.smartnet-myaccount-page .page-content-wrap,
+body.smartnet-myaccount-page [class*="page-content-wrap"],
+body.smartnet-myaccount-page .container,
+body.smartnet-myaccount-page .woocommerce,
+body.smartnet-myaccount-page .entry-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Dashboard ko viewport ki puri width mein stretch karo */
+body.smartnet-myaccount-page .smartnet-account-layout {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  border-radius: 0 !important;
+}
+
+/* === THEME KA PAGE SIDEBAR HIDE KARO === */
+body.smartnet-myaccount-page #secondary,
+body.smartnet-myaccount-page .widget-area,
+body.smartnet-myaccount-page .site-sidebar,
+body.smartnet-myaccount-page aside.sidebar,
+body.smartnet-myaccount-page .feron-sidebar,
+body.smartnet-myaccount-page .thim-sidebar,
+body.smartnet-myaccount-page .sidebar-area,
+body.smartnet-myaccount-page .account-page-left-sidebar,
+body.smartnet-myaccount-page [class*="feron-account-sidebar"],
+body.smartnet-myaccount-page .woocommerce-account > .woocommerce > nav,
+body.smartnet-myaccount-page .woocommerce-account .col-left,
+body.smartnet-myaccount-page .woocommerce-account .col-md-3,
+body.smartnet-myaccount-page .woocommerce-account .col-lg-3 {
+  display: none !important;
+}
+
+/* === THEME KE HEADER HAMBURGER HIDE KARO (sirf dashboard hamburger rahe) === */
+body.smartnet-myaccount-page .site-header .hamburger-menu,
+body.smartnet-myaccount-page .site-header .mobile-menu-toggle,
+body.smartnet-myaccount-page .site-header [class*="hamburger"],
+body.smartnet-myaccount-page .site-header [class*="mobile-toggle"],
+body.smartnet-myaccount-page header [class*="toggle"],
+body.smartnet-myaccount-page .feron-header-menu-toggle,
+body.smartnet-myaccount-page .thim-header-toggle,
+body.smartnet-myaccount-page .menu-toggle,
+body.smartnet-myaccount-page .wp-block-navigation__responsive-container-open {
+  display: none !important;
+}
+
+/* Breadcrumb bhi hatao */
+body.smartnet-myaccount-page .page-header,
+body.smartnet-myaccount-page .breadcrumb-area,
+body.smartnet-myaccount-page .feron-breadcrumb,
+body.smartnet-myaccount-page .thim-breadcrumb {
+  display: none !important;
+}
+
+/* Content area full width karo */
+body.smartnet-myaccount-page .site-content,
+body.smartnet-myaccount-page #content,
+body.smartnet-myaccount-page #primary,
+body.smartnet-myaccount-page .content-area,
+body.smartnet-myaccount-page main.site-main,
+body.smartnet-myaccount-page .woocommerce-account .col-md-9,
+body.smartnet-myaccount-page .woocommerce-account .col-lg-9,
+body.smartnet-myaccount-page .woocommerce-account .col-right {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+
+/* --- MAIN LAYOUT --- */
+.smartnet-account-layout {
+  display: grid;
+  grid-template-columns: 238px minmax(0, 1fr);
+  min-height: 760px;
+  width: 98% !important; 
+  max-width: 1800px !important;
+  margin: 20px auto !important;
+  background: radial-gradient(circle at 24% 38%, rgba(204, 255, 0, 0.18), transparent 0 4%, transparent 14%), radial-gradient(circle at 62% 6%, rgba(230, 57, 70, 0.34), transparent 35%), linear-gradient(135deg, #0A0A1F 0%, #0D0D2B 45%, #06050A 100%);
+  color: #f8f6ff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(6, 4, 26, 0.56);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.smartnet-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(16, 13, 52, 0.9);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 26px 16px;
+}
+
+.smartnet-brand,
+.smartnet-profile-mini,
+.smartnet-user-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.smartnet-brand {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.smartnet-brand:hover {
+  opacity: 0.8;
+}
+
+.smartnet-brand:focus {
+  outline: 2px solid rgba(202, 255, 0, 0.5);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.smartnet-brand-mark,
+.smartnet-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #CCFF00, #00D9FF);
+  color: #090818;
+  font-weight: 950;
+  font-size: 12px;
+  box-shadow: 0 14px 30px rgba(230, 57, 70, 0.34), 0 0 22px rgba(204, 255, 0, 0.3);
+}
+
+.smartnet-brand-name {
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.smartnet-sidebar-search input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.055);
+  color: #fff;
+  padding: 11px 13px;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.smartnet-sidebar-search input::placeholder {
+  color: rgba(248, 246, 255, 0.5);
+}
+
+.smartnet-menu-label,
+.smartnet-eyebrow {
+  margin: 0 0 10px;
+  color: rgba(248, 246, 255, 0.55);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.smartnet-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 7px;
+}
+
+.smartnet-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 10px 11px;
+  border-radius: 12px;
+  color: rgba(248, 246, 255, 0.72);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 750;
+  transition: 0.2s ease;
+}
+
+.smartnet-menu a:hover,
+.smartnet-menu .is-active a,
+.smartnet-menu .woocommerce-MyAccount-navigation-link--dashboard.is-active a {
+  background: linear-gradient(135deg, #E63946, #C1121F);
+  color: #fff;
+  box-shadow: 0 14px 28px rgba(230, 57, 70, 0.35);
+  transform: translateX(3px);
+}
+
+.smartnet-menu-icon {
+  width: 27px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: rgba(204, 255, 0, 0.11);
+  color: #CCFF00;
+  font-size: 10px;
+  font-weight: 950;
+}
+
+.smartnet-upgrade-card {
+  margin-top: auto;
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #E63946, #C1121F 55%, #8B0000);
+  box-shadow: 0 20px 45px rgba(230, 57, 70, 0.36);
+}
+
+.smartnet-upgrade-card strong,
+.smartnet-upgrade-card span,
+.smartnet-upgrade-card a {
+  display: block;
+}
+
+.smartnet-upgrade-card span {
+  margin: 8px 0 16px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 12px;
+}
+
+.smartnet-upgrade-card a {
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-weight: 850;
+}
+
+.smartnet-profile-mini strong,
+.smartnet-profile-mini span {
+  display: block;
+  max-width: 148px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.smartnet-profile-mini span {
+  color: rgba(248, 246, 255, 0.52);
+  font-size: 11px;
+}
+
+.smartnet-account-main {
+  padding: 28px;
+  min-width: 0;
+}
+
+/* Sirf WC ki default navigation hide karo, hamari smartnet-sidebar nahi */
+.woocommerce-account .woocommerce-MyAccount-navigation:not(.smartnet-sidebar) {
+  display: none !important;
+}
+
+/* Feron theme ka .woocommerce-MyAccount-navigation position/width reset karo
+   taaki hamaari sidebar grid mein sahi se fit ho */
+.smartnet-account-layout aside.smartnet-sidebar.woocommerce-MyAccount-navigation {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  width: auto !important;
+  max-width: 100% !important;
+  float: none !important;
+  transform: none !important;
+  z-index: auto !important;
+  background: rgba(16, 13, 52, 0.9) !important;
+}
+
+/* Hamaara grid container properly stretch ho */
+.smartnet-account-layout {
+  align-items: stretch !important;
+}
+
+/* Content area ka float/width bhi reset karo */
+.smartnet-account-layout .smartnet-account-main.woocommerce-MyAccount-content {
+  float: none !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+.smartnet-account-layout .woocommerce-MyAccount-content {
+  width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+.smartnet-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.smartnet-topbar h1 {
+  color: #fff;
+  font-size: clamp(46px, 7vw, 86px);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  margin: 4px 0 8px;
+}
+
+.smartnet-topbar p {
+  max-width: 760px;
+  color: rgba(248, 246, 255, 0.62);
+  margin: 0;
+  font-size: 13px;
+}
+
+.smartnet-user-pill {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 8px 14px 8px 8px;
+  white-space: nowrap;
+}
+
+.smartnet-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.smartnet-stat-card {
+  position: relative;
+  min-height: 126px;
+  padding: 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 18px 36px rgba(4, 3, 18, 0.2);
+  display: block;
+}
+
+.smartnet-stat-card::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  bottom: -20px;
+  width: 84px;
+  height: 84px;
+  border-radius: 999px;
+  border: 12px solid rgba(255, 255, 255, 0.15);
+}
+
+.smartnet-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 44px rgba(7, 4, 25, 0.32);
+}
+
+.smartnet-stat-card span,
+.smartnet-stat-card small {
+  display: block;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+}
+
+.smartnet-stat-card strong {
+  display: block;
+  margin: 18px 0 4px;
+  font-size: 26px;
+  line-height: 1;
+  color: #fff;
+}
+
+.smartnet-ctf-stat-1 { background: linear-gradient(135deg, #E63946, #C1121F); }
+.smartnet-ctf-stat-2 { background: linear-gradient(135deg, #00D9FF, #00A8CC); }
+.smartnet-ctf-stat-3 { background: linear-gradient(135deg, #CCFF00, #99CC00); }
+.smartnet-ctf-stat-4 { background: linear-gradient(135deg, #FF6B35, #DC143C); }
+
+.smartnet-dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.48fr) minmax(280px, 0.86fr);
+  gap: 18px;
+}
+
+.smartnet-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(19, 16, 58, 0.75);
+  border-radius: 22px;
+  padding: 21px;
+  box-shadow: 0 18px 40px rgba(8, 6, 31, 0.24);
+  backdrop-filter: blur(18px);
+}
+
+.smartnet-panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.smartnet-panel-head h2 {
+  margin: 4px 0 0;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.smartnet-panel-head span {
+  color: rgba(248, 246, 255, 0.55);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.smartnet-panel-head > div span {
+  display: block;
+}
+
+.smartnet-panel-head button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.smartnet-panel-head button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.smartnet-panel-head > a {
+  color: #CCFF00;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-top: 4px;
+}
+
+.smartnet-terminal-lines {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+  color: rgba(248, 246, 255, 0.56);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}
+
+.smartnet-terminal-lines p {
+  margin: 0;
+}
+
+.smartnet-terminal-lines span {
+  color: #CCFF00;
+  margin-right: 6px;
+}
+
+.smartnet-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  height: 170px;
+  padding: 14px 8px 0;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), transparent);
+}
+
+.smartnet-chart-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.smartnet-chart-item em {
+  font-style: normal;
+  font-size: 10px;
+  color: rgba(248, 246, 255, 0.45);
+}
+
+.smartnet-chart-bar {
+  width: 100%;
+  max-width: 48px;
+  min-height: 18px;
+  border-radius: 999px 999px 8px 8px;
+  background: linear-gradient(180deg, #CCFF00, #00D9FF 55%, #E63946);
+  display: block;
+}
+
+/* Action list */
+.smartnet-action-list {
+  display: grid;
+  gap: 8px;
+}
+
+.smartnet-action-list a {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.smartnet-action-list a:hover {
+  background: rgba(230, 57, 70, 0.15);
+  border-color: rgba(230, 57, 70, 0.3);
+}
+
+.smartnet-action-list strong {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.smartnet-action-list span {
+  display: block;
+  color: rgba(248, 246, 255, 0.5);
+  font-size: 11px;
+}
+
+/* Order list */
+.smartnet-order-list {
+  display: grid;
+  gap: 8px;
+}
+
+.smartnet-order-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.04);
+  text-decoration: none;
+  transition: background 0.2s;
+  gap: 12px;
+}
+
+.smartnet-order-list a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.smartnet-order-list span {
+  color: rgba(248, 246, 255, 0.6);
+  font-size: 13px;
+  font-family: ui-monospace, monospace;
+}
+
+.smartnet-order-list strong {
+  color: #fff;
+  font-size: 14px;
+  flex: 1;
+  text-align: center;
+}
+
+.smartnet-order-list em {
+  font-style: normal;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(204, 255, 0, 0.12);
+  color: #CCFF00;
+}
+
+/* FAQ list */
+.smartnet-faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.smartnet-faq-list > div {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.smartnet-faq-list strong {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.smartnet-faq-list span {
+  display: block;
+  color: rgba(248, 246, 255, 0.5);
+  font-size: 11px;
+}
+
+/* Empty state */
+.smartnet-empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.smartnet-empty-state strong {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.smartnet-empty-state span {
+  display: block;
+  color: rgba(248, 246, 255, 0.5);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.smartnet-empty-state a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #E63946, #C1121F);
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =============================================
+   MOBILE HAMBURGER BUTTON
+   ============================================= */
+
+.smartnet-mobile-toggle {
+  display: none;
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 10001;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #E63946, #C1121F);
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.45);
+  padding: 0;
+}
+
+/* Desktop pe hamburger chhupa raho (1024px+ pe sidebar visible ho) */
+@media (min-width: 1025px) {
+  .smartnet-mobile-toggle {
+    display: none !important;
+  }
+}
+
+.smartnet-mobile-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.smartnet-mobile-toggle.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.smartnet-mobile-toggle.is-open span:nth-child(2) {
+  opacity: 0;
+}
+.smartnet-mobile-toggle.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Sidebar overlay on mobile */
+.smartnet-sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 998;
+  backdrop-filter: blur(4px);
+}
+
+.smartnet-sidebar-overlay.is-open {
+  display: block;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET (max 1024px)
+   ============================================= */
+
+@media (max-width: 1024px) {
+
+  /* Full width override bhi tablet pe */
+  body.smartnet-myaccount-page .smartnet-account-layout {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+  }
+
+  .smartnet-account-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Sidebar mobile pe fixed slide-in panel banta hai */
+  .smartnet-sidebar {
+    position: fixed !important;
+    top: 0;
+    left: -280px;
+    width: 260px !important;
+    height: 100vh;
+    z-index: 999;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 4px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .smartnet-sidebar.is-open {
+    left: 0;
+  }
+
+  /* Hamburger button dikhao */
+  .smartnet-mobile-toggle {
+    display: flex;
+  }
+
+  /* Main content full width */
+  .smartnet-account-main {
+    padding: 70px 16px 20px !important;
+  }
+
+  /* Stat cards 2x2 grid */
+  .smartnet-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Dashboard grid single column */
+  .smartnet-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Topbar heading thoda chota */
+  .smartnet-topbar h1 {
+    font-size: clamp(36px, 8vw, 60px);
+  }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE (max 640px)
+   ============================================= */
+
+@media (max-width: 640px) {
+
+  .smartnet-account-main {
+    padding: 70px 12px 16px !important;
+  }
+
+  /* Topbar: stack vertically */
+  .smartnet-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .smartnet-topbar h1 {
+    font-size: clamp(32px, 10vw, 52px);
+    margin: 2px 0 6px;
+  }
+
+  .smartnet-topbar p {
+    font-size: 12px;
+  }
+
+  /* User pill full width */
+  .smartnet-user-pill {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Stat cards single column */
+  .smartnet-stat-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .smartnet-stat-card {
+    min-height: 100px;
+    padding: 16px;
+  }
+
+  .smartnet-stat-card strong {
+    font-size: 22px;
+    margin: 12px 0 3px;
+  }
+
+  /* Panels */
+  .smartnet-panel {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .smartnet-panel-head h2 {
+    font-size: 18px;
+  }
+
+  /* Chart thoda chota */
+  .smartnet-chart {
+    height: 120px;
+    gap: 8px;
+  }
+
+  /* Order list */
+  .smartnet-order-list a {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .smartnet-order-list strong {
+    text-align: left;
+  }
+
+  /* Action list */
+  .smartnet-action-list a {
+    padding: 12px;
+  }
+
+  /* Empty state */
+  .smartnet-empty-state {
+    padding: 24px 12px;
+  }
+
+  /* Dashboard grid gap */
+  .smartnet-dashboard-grid {
+    gap: 12px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — SMALL MOBILE (max 400px)
+   ============================================= */
+
+@media (max-width: 400px) {
+
+  .smartnet-account-main {
+    padding: 60px 10px 12px !important;
+  }
+
+  .smartnet-topbar h1 {
+    font-size: 28px;
+  }
+
+  .smartnet-stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .smartnet-stat-card {
+    min-height: 90px;
+    padding: 12px;
+  }
+
+  .smartnet-stat-card strong {
+    font-size: 18px;
+    margin: 10px 0 2px;
+  }
+
+  .smartnet-stat-card span,
+  .smartnet-stat-card small {
+    font-size: 10px;
+  }
+}
+
+/* --- AUTH PAGE STYLES --- */
+.smartnet-auth-page {
+  display: grid;
+  grid-template-columns: 0.88fr 1fr;
+  gap: 24px;
+  max-width: 1080px;
+  margin: 40px auto;
+  padding: 22px;
+  border-radius: 30px;
+  background: radial-gradient(circle at 18% 20%, rgba(204, 255, 0, 0.18), transparent 26%), radial-gradient(circle at 72% 6%, rgba(230, 57, 70, 0.34), transparent 35%), #0A0A1F;
+  box-shadow: 0 30px 80px rgba(8, 6, 31, 0.45);
+  color: #f8f6ff;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.smartnet-auth-hero {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.smartnet-auth-hero h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.smartnet-auth-hero p {
+  color: rgba(248, 246, 255, 0.62);
+  font-size: 13px;
+  margin: 0;
+}
+
+.smartnet-auth-metrics {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.smartnet-auth-metrics div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.smartnet-auth-metrics strong {
+  color: #CCFF00;
+  font-size: 18px;
+  display: block;
+}
+
+.smartnet-auth-metrics span {
+  color: rgba(248, 246, 255, 0.5);
+  font-size: 11px;
+  display: block;
+}
+
+.smartnet-auth-card {
+  background: rgba(19, 16, 58, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 30px;
+  backdrop-filter: blur(18px);
+}
+
+.smartnet-auth-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.smartnet-auth-tabs a {
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(248, 246, 255, 0.6);
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s;
+}
+
+.smartnet-auth-tabs a.is-active {
+  background: linear-gradient(135deg, #E63946, #C1121F);
+  color: #fff;
+  border-color: transparent;
+}
+
+.smartnet-auth-panel h2 {
+  color: #fff;
+  margin: 0 0 20px;
+  font-size: 22px;
+}
+
+.smartnet-auth-form .woocommerce-form-row {
+  margin-bottom: 16px;
+}
+
+.smartnet-auth-form label {
+  display: block;
+  color: rgba(248, 246, 255, 0.7);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.smartnet-auth-form input[type="text"],
+.smartnet-auth-form input[type="email"],
+.smartnet-auth-form input[type="password"] {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.smartnet-auth-form input:focus {
+  border-color: rgba(114, 87, 255, 0.6);
+}
+
+.smartnet-auth-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.smartnet-auth-actions label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.smartnet-auth-actions a {
+  color: #CCFF00;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.smartnet-auth-submit {
+  width: 100%;
+  padding: 13px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #CCFF00, #00D9FF) !important;
+  color: #090818 !important;
+  font-size: 14px;
+  font-weight: 700;
+  border: none !important;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 8px;
+}
+
+.smartnet-auth-submit:hover {
+  opacity: 0.9;
+}
+
+.toggle-link-section {
+  text-align: center;
+  margin-top: 16px;
+  color: rgba(248, 246, 255, 0.5);
+  font-size: 12px;
+}
+
+.toggle-link-section a {
+  color: #CCFF00;
+  text-decoration: none;
+}
+
+.ajax-msg {
+  display: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.ajax-msg.wc-success {
+  background: rgba(202, 255, 0, 0.12);
+  color: #caff00;
+}
+
+.ajax-msg.wc-error {
+  background: rgba(255, 60, 60, 0.12);
+  color: #ff6b6b;
+}
+
+@media (max-width: 720px) {
+  .smartnet-auth-page {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .smartnet-auth-hero {
+    padding: 20px 10px;
+  }
+}
+
+/* =====================================================
+   FINAL MOBILE HAMBURGER OVERRIDES
+   Dashboard full-width 100vw preserve karta hai.
+   Mobile par sidebar slide menu banega.
+   ===================================================== */
+
+body.smartnet-sidebar-open {
+  overflow: hidden !important;
+}
+
+body.smartnet-myaccount-page .smartnet-mobile-toggle {
+  display: none !important;
+  position: fixed !important;
+  top: 14px !important;
+  left: 14px !important;
+  z-index: 10001 !important;
+  width: 44px !important;
+  height: 44px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #E63946, #C1121F) !important;
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.45) !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 5px !important;
+}
+
+body.smartnet-myaccount-page .smartnet-mobile-toggle span {
+  display: block !important;
+  width: 20px !important;
+  height: 2px !important;
+  background: #fff !important;
+  border-radius: 2px !important;
+  transition: transform 0.25s ease, opacity 0.25s ease !important;
+}
+
+body.smartnet-myaccount-page .smartnet-mobile-toggle.is-open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg) !important;
+}
+
+body.smartnet-myaccount-page .smartnet-mobile-toggle.is-open span:nth-child(2) {
+  opacity: 0 !important;
+}
+
+body.smartnet-myaccount-page .smartnet-mobile-toggle.is-open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg) !important;
+}
+
+body.smartnet-myaccount-page .smartnet-sidebar-overlay {
+  display: none !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.62) !important;
+  z-index: 9998 !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+body.smartnet-myaccount-page .smartnet-sidebar-overlay.is-open {
+  display: block !important;
+}
+
+@media (max-width: 1024px) {
+  body.smartnet-myaccount-page .smartnet-mobile-toggle {
+    display: flex !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-account-layout {
+    grid-template-columns: 1fr !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    overflow: visible !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-account-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 72px 14px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-account-layout aside.smartnet-sidebar.woocommerce-MyAccount-navigation,
+  body.smartnet-myaccount-page .smartnet-sidebar {
+    display: flex !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: -292px !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 280px !important;
+    max-width: 84vw !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    z-index: 10000 !important;
+    overflow-y: auto !important;
+    transform: none !important;
+    transition: left 0.3s ease !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 0 !important;
+    box-shadow: 4px 0 30px rgba(0, 0, 0, 0.5) !important;
+    background: rgba(16, 13, 52, 0.98) !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-account-layout aside.smartnet-sidebar.woocommerce-MyAccount-navigation.is-open,
+  body.smartnet-myaccount-page .smartnet-sidebar.is-open {
+    left: 0 !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-dashboard-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  body.smartnet-myaccount-page .smartnet-account-main {
+    padding: 70px 12px 16px !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-stat-grid,
+  body.smartnet-myaccount-page .smartnet-dashboard-grid,
+  body.smartnet-myaccount-page .smartnet-auth-page,
+  body.smartnet-myaccount-page #customer_login.smartnet-auth-page {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.smartnet-myaccount-page .smartnet-topbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
