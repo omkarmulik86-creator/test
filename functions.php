@@ -139,8 +139,26 @@ function smartnet_hide_default_wc_account_css() {
     }
     ?>
     <style id="smartnet-wc-override">
-        /* === SIDE SPACES HATAO — FULL WIDTH DASHBOARD === */
-        body.smartnet-myaccount-page .padding-120,
+        /* === AGGRESSIVE HEADER HIDE === */
+        body.smartnet-myaccount-page .site-header,
+        body.smartnet-myaccount-page header,
+        body.smartnet-myaccount-page .feron-header,
+        body.smartnet-myaccount-page .thim-header,
+        body.smartnet-myaccount-page .header-wrapper,
+        body.smartnet-myaccount-page .header-top,
+        body.smartnet-myaccount-page .site-header-menu,
+        body.smartnet-myaccount-page .feron-mobile-menu,
+        body.smartnet-myaccount-page .hacklayer-header,
+        body.smartnet-myaccount-page [class*="header"],
+        body.smartnet-myaccount-page [class*="navbar"],
+        body.smartnet-myaccount-page [class*="top-bar"] {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            width: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
         body.smartnet-myaccount-page [class*="padding-120"],
         body.smartnet-myaccount-page .feron-page-content-area,
         body.smartnet-myaccount-page .page-content-wrap,
@@ -151,6 +169,19 @@ function smartnet_hide_default_wc_account_css() {
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
+
+        /* === AGGRESSIVE COLOR OVERRIDE — ALL PURPLES === */
+        body.smartnet-myaccount-page *[style*="7457ff"],
+        body.smartnet-myaccount-page *[style*="553be8"],
+        body.smartnet-myaccount-page *[style*="purple"],
+        body.smartnet-myaccount-page *[style*="#9f8fdb"],
+        body.smartnet-myaccount-page *[style*="#6c5ac4"],
+        body.smartnet-myaccount-page [style*="rgb(116, 87, 255)"],
+        body.smartnet-myaccount-page [style*="rgb(83, 59, 241)"] {
+            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            color: #fff !important;
+        }
+
         body.smartnet-myaccount-page .smartnet-account-layout {
             width: 100vw !important;
             max-width: 100vw !important;
