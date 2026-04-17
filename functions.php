@@ -90,14 +90,14 @@ function smartnet_myaccount_dashboard_assets() {
         'smartnet-myaccount-dashboard',
         get_stylesheet_directory_uri() . '/assets/css/myaccount-dashboard.css',
         array(),
-        '1.0.2'
+        '2.0.0'
     );
 
     wp_enqueue_script(
         'smartnet-myaccount-dashboard',
         get_stylesheet_directory_uri() . '/assets/js/myaccount-dashboard.js',
         array(),
-        '1.0.2',
+        '2.0.0',
         true
     );
 
@@ -363,8 +363,8 @@ function smartnet_hide_default_wc_account_css() {
         body.smartnet-myaccount-page .smartnet-auth-form input[type="text"]:focus,
         body.smartnet-myaccount-page .smartnet-auth-form input[type="email"]:focus,
         body.smartnet-myaccount-page .smartnet-auth-form input[type="password"]:focus {
-          border-color: rgba(202, 255, 0, 0.65) !important;
-          box-shadow: 0 0 0 3px rgba(202, 255, 0, 0.1) !important;
+          border-color: rgba(204, 255, 0, 0.65) !important;
+          box-shadow: 0 0 0 3px rgba(204, 255, 0, 0.1) !important;
         }
 
         body.smartnet-myaccount-page .smartnet-auth-actions {
