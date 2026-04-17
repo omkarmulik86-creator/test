@@ -110,7 +110,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   width: 98% !important; 
   max-width: 1800px !important;
   margin: 20px auto !important;
-  background: radial-gradient(circle at 24% 38%, rgba(202, 255, 0, 0.18), transparent 0 4%, transparent 14%), radial-gradient(circle at 62% 6%, rgba(111, 62, 255, 0.34), transparent 35%), linear-gradient(135deg, #15113e 0%, #151442 45%, #0b0a25 100%);
+  background: radial-gradient(circle at 24% 38%, rgba(204, 255, 0, 0.18), transparent 0 4%, transparent 14%), radial-gradient(circle at 62% 6%, rgba(230, 57, 70, 0.34), transparent 35%), linear-gradient(135deg, #0A0A1F 0%, #0D0D2B 45%, #06050A 100%);
   color: #f8f6ff;
   border-radius: 28px;
   overflow: hidden;
@@ -160,11 +160,11 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   width: 38px;
   height: 38px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #caff00, #27e8ff);
+  background: linear-gradient(135deg, #CCFF00, #00D9FF);
   color: #090818;
   font-weight: 950;
   font-size: 12px;
-  box-shadow: 0 14px 30px rgba(87, 92, 255, 0.34), 0 0 22px rgba(202, 255, 0, 0.3);
+  box-shadow: 0 14px 30px rgba(230, 57, 70, 0.34), 0 0 22px rgba(204, 255, 0, 0.3);
 }
 
 .smartnet-brand-name {
@@ -222,9 +222,9 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
 .smartnet-menu a:hover,
 .smartnet-menu .is-active a,
 .smartnet-menu .woocommerce-MyAccount-navigation-link--dashboard.is-active a {
-  background: linear-gradient(135deg, #7257ff, #4d36e9);
+  background: linear-gradient(135deg, #E63946, #C1121F);
   color: #fff;
-  box-shadow: 0 14px 28px rgba(83, 59, 241, 0.35);
+  box-shadow: 0 14px 28px rgba(230, 57, 70, 0.35);
   transform: translateX(3px);
 }
 
@@ -235,8 +235,8 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   align-items: center;
   justify-content: center;
   border-radius: 9px;
-  background: rgba(202, 255, 0, 0.11);
-  color: #d7ff3f;
+  background: rgba(204, 255, 0, 0.11);
+  color: #CCFF00;
   font-size: 10px;
   font-weight: 950;
 }
@@ -245,8 +245,8 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   margin-top: auto;
   padding: 18px;
   border-radius: 20px;
-  background: linear-gradient(145deg, #7358ff, #5e3bf0 55%, #3c2cb0);
-  box-shadow: 0 20px 45px rgba(82, 50, 234, 0.36);
+  background: linear-gradient(145deg, #E63946, #C1121F 55%, #8B0000);
+  box-shadow: 0 20px 45px rgba(230, 57, 70, 0.36);
 }
 
 .smartnet-upgrade-card strong,
@@ -413,10 +413,10 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   color: #fff;
 }
 
-.smartnet-ctf-stat-1 { background: linear-gradient(135deg, #7457ff, #553be8); }
-.smartnet-ctf-stat-2 { background: linear-gradient(135deg, #2fc7ff, #477bff); }
-.smartnet-ctf-stat-3 { background: linear-gradient(135deg, #b527ff, #7838ff); }
-.smartnet-ctf-stat-4 { background: linear-gradient(135deg, #dd35ff, #ba25e8); }
+.smartnet-ctf-stat-1 { background: linear-gradient(135deg, #E63946, #C1121F); }
+.smartnet-ctf-stat-2 { background: linear-gradient(135deg, #00D9FF, #00A8CC); }
+.smartnet-ctf-stat-3 { background: linear-gradient(135deg, #CCFF00, #99CC00); }
+.smartnet-ctf-stat-4 { background: linear-gradient(135deg, #FF6B35, #DC143C); }
 
 .smartnet-dashboard-grid {
   display: grid;
@@ -476,7 +476,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
 }
 
 .smartnet-panel-head > a {
-  color: #caff00;
+  color: #CCFF00;
   font-size: 12px;
   text-decoration: none;
   white-space: nowrap;
@@ -497,7 +497,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
 }
 
 .smartnet-terminal-lines span {
-  color: #caff00;
+  color: #CCFF00;
   margin-right: 6px;
 }
 
@@ -532,7 +532,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   max-width: 48px;
   min-height: 18px;
   border-radius: 999px 999px 8px 8px;
-  background: linear-gradient(180deg, #caff00, #1dc8ff 55%, #7457ff);
+  background: linear-gradient(180deg, #CCFF00, #00D9FF 55%, #E63946);
   display: block;
 }
 
@@ -553,8 +553,8 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
 }
 
 .smartnet-action-list a:hover {
-  background: rgba(114, 87, 255, 0.15);
-  border-color: rgba(114, 87, 255, 0.3);
+  background: rgba(230, 57, 70, 0.15);
+  border-color: rgba(230, 57, 70, 0.3);
 }
 
 .smartnet-action-list strong {
@@ -611,8 +611,8 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   font-size: 11px;
   padding: 3px 10px;
   border-radius: 999px;
-  background: rgba(202, 255, 0, 0.12);
-  color: #caff00;
+  background: rgba(204, 255, 0, 0.12);
+  color: #CCFF00;
 }
 
 /* FAQ list */
@@ -665,7 +665,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #7457ff, #553be8);
+  background: linear-gradient(135deg, #E63946, #C1121F);
   color: #fff;
   text-decoration: none;
   font-size: 13px;
@@ -685,14 +685,14 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #7457ff, #553be8);
+  background: linear-gradient(135deg, #E63946, #C1121F);
   border: none;
   cursor: pointer;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  box-shadow: 0 8px 20px rgba(83, 59, 241, 0.45);
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.45);
   padding: 0;
 }
 
@@ -933,7 +933,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   margin: 40px auto;
   padding: 22px;
   border-radius: 30px;
-  background: radial-gradient(circle at 18% 20%, rgba(202, 255, 0, 0.18), transparent 26%), radial-gradient(circle at 72% 6%, rgba(111, 62, 255, 0.34), transparent 35%), #14113a;
+  background: radial-gradient(circle at 18% 20%, rgba(204, 255, 0, 0.18), transparent 26%), radial-gradient(circle at 72% 6%, rgba(230, 57, 70, 0.34), transparent 35%), #0A0A1F;
   box-shadow: 0 30px 80px rgba(8, 6, 31, 0.45);
   color: #f8f6ff;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
@@ -1009,7 +1009,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
 }
 
 .smartnet-auth-tabs a.is-active {
-  background: linear-gradient(135deg, #7457ff, #553be8);
+  background: linear-gradient(135deg, #E63946, #C1121F);
   color: #fff;
   border-color: transparent;
 }
@@ -1066,7 +1066,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
 }
 
 .smartnet-auth-actions a {
-  color: #caff00;
+  color: #CCFF00;
   font-size: 12px;
   text-decoration: none;
 }
@@ -1075,8 +1075,8 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
   width: 100%;
   padding: 13px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #7457ff, #553be8) !important;
-  color: #fff !important;
+  background: linear-gradient(135deg, #CCFF00, #00D9FF) !important;
+  color: #090818 !important;
   font-size: 14px;
   font-weight: 700;
   border: none !important;
@@ -1097,7 +1097,7 @@ body.smartnet-myaccount-page .woocommerce-account .col-right {
 }
 
 .toggle-link-section a {
-  color: #caff00;
+  color: #CCFF00;
   text-decoration: none;
 }
 
@@ -1149,8 +1149,8 @@ body.smartnet-myaccount-page .smartnet-mobile-toggle {
   height: 44px !important;
   border: 0 !important;
   border-radius: 12px !important;
-  background: linear-gradient(135deg, #7457ff, #553be8) !important;
-  box-shadow: 0 8px 20px rgba(83, 59, 241, 0.45) !important;
+  background: linear-gradient(135deg, #E63946, #C1121F) !important;
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.45) !important;
   cursor: pointer !important;
   padding: 0 !important;
   align-items: center !important;
