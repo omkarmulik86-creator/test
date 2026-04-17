@@ -393,7 +393,7 @@ function smartnet_hide_default_wc_account_css() {
           min-height: 18px !important;
           margin: 0 !important;
           padding: 0 !important;
-          accent-color: #caff00 !important;
+          accent-color: #CCFF00 !important;
           appearance: auto !important;
         }
 
@@ -407,7 +407,7 @@ function smartnet_hide_default_wc_account_css() {
 
         body.smartnet-myaccount-page .smartnet-auth-actions a,
         body.smartnet-myaccount-page .toggle-link-section a {
-          color: #caff00 !important;
+          color: #CCFF00 !important;
         }
 
         body.smartnet-myaccount-page .smartnet-auth-submit,
@@ -423,7 +423,7 @@ function smartnet_hide_default_wc_account_css() {
           padding: 15px 18px !important;
           border: 0 !important;
           border-radius: 14px !important;
-          background: linear-gradient(135deg, #caff00, #1dc8ff) !important;
+          background: linear-gradient(135deg, #CCFF00, #00D9FF) !important;
           color: #090818 !important;
           font-size: 14px !important;
           font-weight: 950 !important;
@@ -461,8 +461,8 @@ function smartnet_hide_default_wc_account_css() {
             height: 44px !important;
             border: 0 !important;
             border-radius: 12px !important;
-            background: linear-gradient(135deg, #7457ff, #553be8) !important;
-            box-shadow: 0 8px 20px rgba(83, 59, 241, 0.45) !important;
+            background: linear-gradient(135deg, #E63946, #C1121F) !important;
+            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.45) !important;
             cursor: pointer !important;
             padding: 0 !important;
             align-items: center !important;
